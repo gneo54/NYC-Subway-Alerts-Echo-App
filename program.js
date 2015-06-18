@@ -12,11 +12,11 @@ exports.handler = function (event, context) {
          * Uncomment this if statement and replace application.id with yours
          * to prevent other voice applications from using this function.
          */
-        /*
-        if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.[unique-value-here]") {
+        
+        if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.07fa2e9b-6ec4-436d-b240-f2e30a1d4808") {
             context.fail("Invalid Application ID");
         }
-        */
+        
 
         if (event.session.new) {
             onSessionStarted({requestId: event.request.requestId}, event.session);
@@ -73,7 +73,7 @@ function onIntent(intentRequest, session, callback) {
     var intent = intentRequest.intent,
         intentName = intentRequest.intent.name;
 
-    if ("MyColorIsIntent" === intentName) {
+    /*if ("MyColorIsIntent" === intentName) {
         setColorInSession(intent, session, callback);
     } 
     else if ("MyTrainLineIsIntent"  === intentName){
@@ -83,9 +83,19 @@ function onIntent(intentRequest, session, callback) {
     } 
     else if ("WhatsMyTrainStatus" === intentName) {
         getTrainStatus(intent, session, callback);
-    }
-    else if ("GetTrainStatus" === intentName) {
-        getTrainStatusEx(intent, session, callback);
+    }*/
+    if ("GetTrainStatus" === intentName) {
+        var favoriteTrainLine;
+        var favoriteTrainLineSlot = intent.slots.TrainLine;
+            console.log(favoriteTrainLineSlot);
+
+        if (favoriteTrainLineSlot) {
+            favoriteTrainLine = favoriteTrainLineSlot.value;
+        }
+
+        getServiceStatus(favoriteTrainLine, function gettrainstatusexcallback(response){
+            getTrainStatusEx(intent, session, callback, response, favoriteTrainLine);
+        });
     }else {
         throw "Invalid intent";
     }
@@ -162,7 +172,7 @@ function getMTAWelcomeResponse(callback) {
                 + "The one Train or The D train";
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
-    var repromptText = "lease tell me what train line you are interested in by saying, "
+    var repromptText = "Please tell me what train line you are interested in by saying, "
                 + "The one Train or The D train";
     var shouldEndSession = false;
 
@@ -197,7 +207,9 @@ function setColorInSession(intent, session, callback) {
              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
 
-function getTrainStatusEx(intent, session, callback) {
+function getTrainStatusEx(intent, session, callback, actualstatus, trainline) {
+
+
     var cardTitle = intent.name;
     var favoriteTrainLine;
     var repromptText = null;
@@ -206,23 +218,25 @@ function getTrainStatusEx(intent, session, callback) {
     var speechOutput = "";
 
     //Get Line
-    if(session.attributes) {
-        favoriteTrainLine = session.attributes.favoriteTrainLine;
-    }
+    //if(session.attributes) {
+    //    favoriteTrainLine = session.attributes.favoriteTrainLine;
+    //}
 
-    if(favoriteTrainLine) {
+    
+
+    if(trainline) {
         //translate trainline
-        speechOutput = "The Status of Train Line " + favoriteTrainLine + " is Good Service"  + getServiceStatus();
+        speechOutput = "The Status of Train Line " + trainline + " is " + actualstatus;//Good Service"  + getServiceStatus();
         shouldEndSession = true;
     }
     else {
-        speechOutput = "I'm not sure what your preferred train line is, you can say my preferred train line is the 1 train or the D train.";
+        speechOutput = "I'm not sure what train line that is. Try saying what is the status of the  1 train or the D train?";
     }
 
     // Setting repromptText to null signifies that we do not want to reprompt the user. 
     // If the user does not respond or says something that is not understood, the app session 
     // closes.
-    callback(sessionAttributes,
+   callback(sessionAttributes,
              buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
 }
 
@@ -279,7 +293,7 @@ function getTrainStatus(intent, session, callback) {
 
     if(favoriteTrainLine) {
         //translate trainline
-        speechOutput = "The Status of Train Line " + favoriteTrainLine + " is Good Service" + getServiceStatus();
+        speechOutput = "The Status of Train Line " + favoriteTrainLine + " is Good Service";// + getServiceStatus();
         shouldEndSession = true;
     }
     else {
@@ -293,7 +307,7 @@ function getTrainStatus(intent, session, callback) {
              buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
 }
 
-function docall(urlToCall, callbackfunc){
+function docall(trainline, urlToCall, callbackfunc){
 
     var request = require('request');
     var cheerio = require('cheerio');
@@ -301,13 +315,13 @@ function docall(urlToCall, callbackfunc){
 
     request.post(
         urlToCall,
-        { form: { 'lineName': '123', 'mode': 'Subways'  } },
+        { form: { 'lineName': trainline, 'mode': 'Subways'  } },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 //console.log(body)
 
             $ = cheerio.load(body);
-            var newserviceStatus = $('#status-contents').text();
+            var newserviceStatus = $('#status-contents').text().replace(/[\n\t\r]/g,"");
             
                 return callbackfunc(newserviceStatus);
             }
@@ -315,11 +329,44 @@ function docall(urlToCall, callbackfunc){
     );
 }
 
-function getServiceStatus(){
-     docall('http://service.mta.info/ServiceStatus/statusmessage.aspx', function(response){
-        console.log('Service Status:', response);
-        return response;
-     })
+function getServiceStatus(trainlineslot, callbackfunction){
+
+    var trainline;
+    if (trainlineslot == 'one' || trainlineslot == 'two' || trainlineslot == 'three' || trainlineslot == '1' || trainlineslot == '2' || trainlineslot == '3'){
+        trainline = '123';
+    }   
+
+    if (trainlineslot.toLowerCase() == 'a' || trainlineslot.toLowerCase() == 'c' ||  trainlineslot.toLowerCase() == 'e'){
+        trainline = 'ACE'
+    }
+
+   if (trainlineslot.toLowerCase() === 'b' || trainlineslot.toLowerCase() == 'd' ||  trainlineslot.toLowerCase() == 'f' || trainlineslot.toLowerCase() == 'm'){
+        trainline = 'BDFM'
+    }
+
+
+    if (trainlineslot == 'n' || trainlineslot == 'q' ||  trainlineslot == 'r' || trainlineslot == 'N' || trainlineslot == 'Q' ||  trainlineslot == 'R'){
+        trainline = 'NQR';
+    }
+
+    if (trainlineslot == 'l' || trainlineslot == 'L'){
+        trainline = 'L';
+    }
+
+       if (trainlineslot == 'j' || trainlineslot == 'J' ||  trainlineslot == 'z' || trainlineslot == 'Z'){
+        trainline = 'JZ';
+    }
+
+     docall(trainline, 'http://service.mta.info/ServiceStatus/statusmessage.aspx', function(response){
+        console.log('Service Status:', response);        
+        callbackfunction(response);
+        //return response;
+     });
+
+
+
+     
+
 }
 function getColorFromSession(intent, session, callback) {
     var cardTitle = intent.name;
