@@ -1,22 +1,20 @@
 /**
- * This sample shows how to create a simple Lambda function for handling speechlet requests.
+ * This app scraps NYC MTA Subway Service Alerts in a simple AWS Lambda function for handling requests from Amazon Echo (Alexa).
  */
 
-// Route the incoming request based on type (LaunchRequest, IntentRequest,
-// etc.) The JSON body of the request is provided in the event parameter.
+// Route the incoming request based on type (LaunchRequest, IntentRequest)
+// The JSON body of the request is provided in the event parameter.
 exports.handler = function (event, context) {
     try {
         console.log("event.session.application.applicationId=" + event.session.application.applicationId);
 
         /**
-         * Uncomment this if statement and replace application.id with yours
-         * to prevent other voice applications from using this function.
+         * Check for Unique Application ID to prevent other voice applications from using this function.
          */
         
         if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.07fa2e9b-6ec4-436d-b240-f2e30a1d4808") {
             context.fail("Invalid Application ID");
         }
-        
 
         if (event.session.new) {
             onSessionStarted({requestId: event.request.requestId}, event.session);
@@ -25,24 +23,27 @@ exports.handler = function (event, context) {
         if (event.request.type === "LaunchRequest") {
             onLaunch(event.request,
                      event.session,
-                     function callback(sessionAttributes, speechletResponse) {
+                     function onActionCallback(sessionAttributes, speechletResponse) {
                         context.succeed(buildResponse(sessionAttributes, speechletResponse));
                      });
+            
         }  else if (event.request.type === "IntentRequest") {
             onIntent(event.request,
                      event.session,
-                     function callback(sessionAttributes, speechletResponse) {
+                     function onActionCallback(sessionAttributes, speechletResponse) {
                          context.succeed(buildResponse(sessionAttributes, speechletResponse));
-                     });
+                     });          
+            
         } else if (event.request.type === "SessionEndedRequest") {
             onSessionEnded(event.request, event.session);
-
             context.succeed();
         }
     } catch (e) {
         context.fail("Exception: " + e);
     }
 };
+
+
 
 /**
  * Called when the session starts.
@@ -53,37 +54,25 @@ function onSessionStarted(sessionStartedRequest, session) {
 }
 
 /**
- * Called when the user launches the app without specifying what they want.
+ * Called when the user launches the app
  */
-function onLaunch(launchRequest, session, callback) {
+function onLaunch(launchRequest, session, onActionCallback) {
     console.log("onLaunch requestId=" + launchRequest.requestId
-                + ", sessionId=" + session.sessionId);
-
-    //getWelcomeResponse(callback);
-    getMTAWelcomeResponse(callback);
+                + ", sessionId=" + session.sessionId);    
+    getMTAWelcomeResponse(onActionCallback);
 }
 
 /** 
  * Called when the user specifies an intent for this application.
  */
-function onIntent(intentRequest, session, callback) {
+function onIntent(intentRequest, session, onActionCallback) {
     console.log("onIntent requestId=" + intentRequest.requestId
                 + ", sessionId=" + session.sessionId);
 
     var intent = intentRequest.intent,
         intentName = intentRequest.intent.name;
 
-    /*if ("MyColorIsIntent" === intentName) {
-        setColorInSession(intent, session, callback);
-    } 
-    else if ("MyTrainLineIsIntent"  === intentName){
-        setTrainLineInSession(intent, session, callback);
-    }else if ("WhatsMyColorIntent" === intentName) {
-        getColorFromSession(intent, session, callback);        
-    } 
-    else if ("WhatsMyTrainStatus" === intentName) {
-        getTrainStatus(intent, session, callback);
-    }*/
+
     if ("GetTrainStatus" === intentName) {
         var favoriteTrainLine;
         var favoriteTrainLineSlot = intent.slots.TrainLine;
@@ -93,8 +82,8 @@ function onIntent(intentRequest, session, callback) {
             favoriteTrainLine = favoriteTrainLineSlot.value;
         }
 
-        getServiceStatus(favoriteTrainLine, function gettrainstatusexcallback(response){
-            getTrainStatusEx(intent, session, callback, response, favoriteTrainLine);
+        getServiceStatus(favoriteTrainLine, function getTrainStatusExCallback(response){
+            getTrainStatusEx(intent, session, onActionCallback, response, favoriteTrainLine);
         });
     }else {
         throw "Invalid intent";
@@ -122,8 +111,8 @@ function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
         },
         card: {
             type: "Simple",
-            title: "SessionSpeechlet - " + title,
-            content: "SessionSpeechlet - " + output
+            title:  title,
+            content: output
         },
         reprompt: {
             outputSpeech: {
@@ -143,69 +132,24 @@ function buildResponse(sessionAttributes, speechletResponse) {
     }
 }
 
-/** 
- * Functions that control the app's behavior.
- */
-function getWelcomeResponse(callback) {
-    // If we wanted to initialize the session to have some attributes we could add those here.
-    var sessionAttributes = {};
-    var cardTitle = "Welcome";
-    var speechOutput = "Welcome to the Alexa AppKit session sample app, "
-                + "Please tell me your favorite color by saying, "
-                + "my favorite color is red";
-    // If the user either does not reply to the welcome message or says something that is not
-    // understood, they will be prompted again with this text.
-    var repromptText = "Please tell me your favorite color by saying, "
-                + "my favorite color is red";
-    var shouldEndSession = false;
-
-    callback(sessionAttributes,
-             buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
-}
-
 function getMTAWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     var sessionAttributes = {};
     var cardTitle = "Welcome";
-    var speechOutput = "Welcome to the MTA Subway Service Status app, "
+    var speechOutput = "Welcome to the MTA Subway Service Status echo app, "
                 + "Please tell me what train line you are interested in by saying, "
-                + "The one Train or The D train";
+                + "The one Train or The D. train";
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
     var repromptText = "Please tell me what train line you are interested in by saying, "
-                + "The one Train or The D train";
+                + "The one Train or The D. train";
     var shouldEndSession = false;
 
     callback(sessionAttributes,
              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
 
-/**
- * Sets the color in the session and prepares the speech to reply to the user.
- */
-function setColorInSession(intent, session, callback) {
-    var cardTitle = intent.name;
-    var favoriteColorSlot = intent.slots.Color;
-    var repromptText = "";
-    var sessionAttributes = {};
-    var shouldEndSession = false;
-    var speechOutput = "";
 
-    if (favoriteColorSlot) {
-        favoriteColor = favoriteColorSlot.value;
-        sessionAttributes = createFavoriteColorAttributes(favoriteColor);
-        speechOutput = "I now know your favorite color is " + favoriteColor + ". You can ask me "
-                + "your favorite color by saying, what's my favorite color?";
-        repromptText = "You can ask me your favorite color by saying, what's my favorite color?";
-    } else {
-        speechOutput = "I'm not sure what your favorite color is, please try again";
-        repromptText = "I'm not sure what your favorite color is, you can tell me your "
-                + "favorite color by saying, my favorite color is red";
-    }
-
-    callback(sessionAttributes, 
-             buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
-}
 
 function getTrainStatusEx(intent, session, callback, actualstatus, trainline) {
 
@@ -215,98 +159,31 @@ function getTrainStatusEx(intent, session, callback, actualstatus, trainline) {
     var repromptText = null;
     var sessionAttributes = {};
     var shouldEndSession = true;
+    var cardTitle = "Train Line Status";
     var speechOutput = "";
 
-    //Get Line
-    //if(session.attributes) {
-    //    favoriteTrainLine = session.attributes.favoriteTrainLine;
-    //}
 
-    
-
-    if(trainline) {
+    if(trainline != '') {
         //translate trainline
-        speechOutput = "The Status of Train Line " + trainline + " is " + actualstatus;//Good Service"  + getServiceStatus();
+        speechOutput = "The Status of the " + trainline + " train line is " + actualstatus;//Good Service"  + getServiceStatus();
         shouldEndSession = true;
     }
     else {
-        speechOutput = "I'm not sure what train line that is. Try saying what is the status of the  1 train or the D train?";
+        speechOutput = "I'm not sure what train line that is. Try saying, What is the status of the one train or the D. train?";
+        shouldEndSession = false;
     }
 
     // Setting repromptText to null signifies that we do not want to reprompt the user. 
     // If the user does not respond or says something that is not understood, the app session 
     // closes.
    callback(sessionAttributes,
-             buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
-}
-
-function setTrainLineInSession(intent, session, callback) {
-    var cardTitle = intent.name;
-    var favoriteTrainLineSlot = intent.slots.TrainLine;
-    console.log(favoriteTrainLineSlot);
-    var repromptText = "";
-    var sessionAttributes = {};
-    var shouldEndSession = false;
-    var speechOutput = "";
-
-    if (favoriteTrainLineSlot) {
-        favoriteTrainLine = favoriteTrainLineSlot.value;
-        sessionAttributes = createFavoriteColorAttributes(favoriteTrainLine);
-        speechOutput = "I now know your Preferred Train Line is  " + favoriteTrainLine + ". You can ask me "
-                + "for that train line's current status by saying, what's the status of my train line?";
-        repromptText = "You can ask me for a status by saying, what's the status of my train line?";
-    } else {
-        speechOutput = "I'm not sure what your favorite color is, please try again";
-        repromptText = "I'm not sure what your favorite color is, you can tell me your "
-                + "favorite color by saying, my favorite color is red";
-    }
-
-    callback(sessionAttributes, 
              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
 
 
-function createFavoriteColorAttributes(favoriteColor) {
-    return {
-        favoriteColor: favoriteColor
-    };
-}
-
-function createFavoriteTrainLineAttributes(favoriteTrainLine) {
-    return {
-        favoriteTrainLine: favoriteTrainLine
-    };
-}
-
-function getTrainStatus(intent, session, callback) {
-    var cardTitle = intent.name;
-    var favoriteTrainLine;
-    var repromptText = null;
-    var sessionAttributes = {};
-    var shouldEndSession = false;
-    var speechOutput = "";
-
-    //Get Line
-    if(session.attributes) {
-        favoriteTrainLine = session.attributes.favoriteTrainLine;
-    }
-
-    if(favoriteTrainLine) {
-        //translate trainline
-        speechOutput = "The Status of Train Line " + favoriteTrainLine + " is Good Service";// + getServiceStatus();
-        shouldEndSession = true;
-    }
-    else {
-        speechOutput = "I'm not sure what your preferred train line is, you can say my preferred train line is the 1 train or the D train.";
-    }
-
-    // Setting repromptText to null signifies that we do not want to reprompt the user. 
-    // If the user does not respond or says something that is not understood, the app session 
-    // closes.
-    callback(sessionAttributes,
-             buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
-}
-
+ // use Cheerio and Request 
+ // to scrap an aspx body response and look for specific content
+ 
 function docall(trainline, urlToCall, callbackfunc){
 
     var request = require('request');
@@ -329,71 +206,49 @@ function docall(trainline, urlToCall, callbackfunc){
     );
 }
 
-function getServiceStatus(trainlineslot, callbackfunction){
+function getServiceStatus(trainlineslot, getTrainStatusExCallbackfunction){
 
     var trainline;
-    if (trainlineslot == 'one' || trainlineslot == 'two' || trainlineslot == 'three' || trainlineslot == '1' || trainlineslot == '2' || trainlineslot == '3'){
+    var trainlineUnderstood = false;
+
+    if (trainlineslot.toLowerCase() == 'one' || trainlineslot.toLowerCase() == 'two' || trainlineslot.toLowerCase() == 'three'){
         trainline = '123';
+        trainlineUnderstood = true;
     }   
-
-    if (trainlineslot.toLowerCase() == 'a' || trainlineslot.toLowerCase() == 'c' ||  trainlineslot.toLowerCase() == 'e'){
-        trainline = 'ACE'
+    else if (trainlineslot.toLowerCase() == 'a' || trainlineslot.toLowerCase() == 'c' ||  trainlineslot.toLowerCase() == 'e' || trainlineslot.toLowerCase() == 'a.' || trainlineslot.toLowerCase() == 'c.' ||  trainlineslot.toLowerCase() == 'e.'){
+        trainline = 'ACE';
+        trainlineUnderstood = true;
     }
-
-   if (trainlineslot.toLowerCase() === 'b' || trainlineslot.toLowerCase() == 'd' ||  trainlineslot.toLowerCase() == 'f' || trainlineslot.toLowerCase() == 'm'){
-        trainline = 'BDFM'
+    else if (trainlineslot.toLowerCase() === 'b' || trainlineslot.toLowerCase() == 'd' ||  trainlineslot.toLowerCase() == 'f' || trainlineslot.toLowerCase() == 'm' ||trainlineslot.toLowerCase() === 'b.' || trainlineslot.toLowerCase() == 'd.' ||  trainlineslot.toLowerCase() == 'f.' || trainlineslot.toLowerCase() == 'm.'){
+        trainline = 'BDFM';
+        trainlineUnderstood = true;
     }
-
-
-    if (trainlineslot == 'n' || trainlineslot == 'q' ||  trainlineslot == 'r' || trainlineslot == 'N' || trainlineslot == 'Q' ||  trainlineslot == 'R'){
+    else if (trainlineslot.toLowerCase() == 'n' || trainlineslot.toLowerCase() == 'q' ||  trainlineslot.toLowerCase() == 'r' || trainlineslot.toLowerCase() == 'n.' || trainlineslot.toLowerCase() == 'q.' ||  trainlineslot.toLowerCase() == 'r.' ){
         trainline = 'NQR';
+        trainlineUnderstood = true;
     }
-
-    if (trainlineslot == 'l' || trainlineslot == 'L'){
+    else if (trainlineslot.toLowerCase() == 'l' || trainlineslot.toLowerCase() == 'l.'){
         trainline = 'L';
+        trainlineUnderstood = true;
     }
-
-       if (trainlineslot == 'j' || trainlineslot == 'J' ||  trainlineslot == 'z' || trainlineslot == 'Z'){
+    else if (trainlineslot.toLowerCase() == 'j' ||  trainlineslot.toLowerCase() == 'z' ||trainlineslot.toLowerCase() == 'j.' ||  trainlineslot.toLowerCase() == 'z.' ){
         trainline = 'JZ';
+        trainlineUnderstood = true;
     }
+    if (trainlineUnderstood == true) {
 
-     docall(trainline, 'http://service.mta.info/ServiceStatus/statusmessage.aspx', function(response){
-        console.log('Service Status:', response);        
-        callbackfunction(response);
-        //return response;
-     });
-
-
+         docall(trainline, 'http://service.mta.info/ServiceStatus/statusmessage.aspx', function(response){
+            console.log('Service Status:', response);        
+            getTrainStatusExCallbackfunction(response);
+            //return response;
+         });
+     }else
+     {
+        getTrainStatusExCallbackfunction('');
+     }
 
      
 
-}
-function getColorFromSession(intent, session, callback) {
-    var cardTitle = intent.name;
-    var favoriteColor;
-    var repromptText = null;
-    var sessionAttributes = {};
-    var shouldEndSession = false;
-    var speechOutput = "";
-
-    if(session.attributes) {
-        favoriteColor = session.attributes.favoriteColor;
-    }
-
-    if(favoriteColor) {
-        speechOutput = "Your favorite color is " + favoriteColor + ", goodbye";
-        shouldEndSession = true;
-    }
-    else {
-        speechOutput = "I'm not sure what your favorite color is, you can say, my favorite color "
-                + " is red";
-    }
-
-    // Setting repromptText to null signifies that we do not want to reprompt the user. 
-    // If the user does not respond or says something that is not understood, the app session 
-    // closes.
-    callback(sessionAttributes,
-             buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
 }
 
 /* INTENT 
