@@ -82,8 +82,8 @@ function onIntent(intentRequest, session, onActionCallback) {
             favoriteTrainLine = favoriteTrainLineSlot.value;
         }
 
-        getServiceStatus(favoriteTrainLine, function getTrainStatusExCallback(response){
-            getTrainStatusEx(intent, session, onActionCallback, response, favoriteTrainLine);
+        getServiceStatus(favoriteTrainLine, function getTrainStatusExCallback(response, translatedtrainline){
+            getTrainStatusEx(intent, session, onActionCallback, response, translatedtrainline, favoriteTrainLine);
         });
     }else {
         throw "Invalid intent";
@@ -151,7 +151,7 @@ function getMTAWelcomeResponse(callback) {
 
 
 
-function getTrainStatusEx(intent, session, callback, actualstatus, trainline) {
+function getTrainStatusEx(intent, session, callback, actualstatus, translatedTrainLine, trainline) {
 
 
     var cardTitle = intent.name;
@@ -165,7 +165,7 @@ function getTrainStatusEx(intent, session, callback, actualstatus, trainline) {
 
     if(trainline != '') {
         //translate trainline
-        speechOutput = "The Status of the " + trainline + " train line is " + actualstatus;//Good Service"  + getServiceStatus();
+        speechOutput = "The Status of the " + translatedTrainLine + " train line is " + actualstatus;//Good Service"  + getServiceStatus();
         shouldEndSession = true;
     }
     else {
@@ -208,38 +208,79 @@ function docall(trainline, urlToCall, callbackfunc){
 
 function getServiceStatus(trainlineslot, getTrainStatusExCallbackfunction){
 
-    var trainline;
+    var trainline; var translatedTrainLine;
     var trainlineUnderstood = false;
 
     if (trainlineslot.toLowerCase() == 'one' || trainlineslot.toLowerCase() == 'two' || trainlineslot.toLowerCase() == 'three'){
         trainline = '123';
         trainlineUnderstood = true;
+        translatedTrainLine =trainlineslot.toLowerCase(); 
+    }   
+    else if (trainlineslot.toLowerCase() == 'four' || trainlineslot.toLowerCase() == 'five' || trainlineslot.toLowerCase() == 'six'){
+        trainline = '456';
+        trainlineUnderstood = true;
+        translatedTrainLine = trainlineslot.toLowerCase(); 
     }   
     else if (trainlineslot.toLowerCase() == 'a' || trainlineslot.toLowerCase() == 'c' ||  trainlineslot.toLowerCase() == 'e' || trainlineslot.toLowerCase() == 'a.' || trainlineslot.toLowerCase() == 'c.' ||  trainlineslot.toLowerCase() == 'e.'){
         trainline = 'ACE';
         trainlineUnderstood = true;
+        if (trainlineslot.length>1){
+            translatedTrainLine =trainlineslot.toLowerCase().substring(0,1); 
+        }
+        else
+        {
+            translatedTrainLine =trainlineslot.toLowerCase();
+        }
     }
     else if (trainlineslot.toLowerCase() === 'b' || trainlineslot.toLowerCase() == 'd' ||  trainlineslot.toLowerCase() == 'f' || trainlineslot.toLowerCase() == 'm' ||trainlineslot.toLowerCase() === 'b.' || trainlineslot.toLowerCase() == 'd.' ||  trainlineslot.toLowerCase() == 'f.' || trainlineslot.toLowerCase() == 'm.'){
         trainline = 'BDFM';
         trainlineUnderstood = true;
+        if (trainlineslot.length>1){
+            translatedTrainLine =trainlineslot.toLowerCase().substring(0,1);
+        }
+        else
+        {
+            translatedTrainLine =trainlineslot.toLowerCase();
+        }
     }
     else if (trainlineslot.toLowerCase() == 'n' || trainlineslot.toLowerCase() == 'q' ||  trainlineslot.toLowerCase() == 'r' || trainlineslot.toLowerCase() == 'n.' || trainlineslot.toLowerCase() == 'q.' ||  trainlineslot.toLowerCase() == 'r.' ){
         trainline = 'NQR';
         trainlineUnderstood = true;
+        if (trainlineslot.length>1){
+         translatedTrainLine =trainlineslot.toLowerCase().substring(0,1);
+        }
+        else
+        {
+            translatedTrainLine =trainlineslot.toLowerCase();
+        }
     }
     else if (trainlineslot.toLowerCase() == 'l' || trainlineslot.toLowerCase() == 'l.'){
         trainline = 'L';
         trainlineUnderstood = true;
+        if (trainlineslot.length>1){
+            translatedTrainLine =trainlineslot.toLowerCase().substring(0,1);
+        }
+        else
+        {
+            translatedTrainLine =trainlineslot.toLowerCase();
+        }
     }
     else if (trainlineslot.toLowerCase() == 'j' ||  trainlineslot.toLowerCase() == 'z' ||trainlineslot.toLowerCase() == 'j.' ||  trainlineslot.toLowerCase() == 'z.' ){
         trainline = 'JZ';
         trainlineUnderstood = true;
+        if (trainlineslot.length>1){
+            translatedTrainLine =trainlineslot.toLowerCase().substring(0,1);
+        }
+        else
+        {
+            translatedTrainLine =trainlineslot.toLowerCase();
+        }
     }
     if (trainlineUnderstood == true) {
 
          docall(trainline, 'http://service.mta.info/ServiceStatus/statusmessage.aspx', function(response){
             console.log('Service Status:', response);        
-            getTrainStatusExCallbackfunction(response);
+            getTrainStatusExCallbackfunction(response, translatedTrainLine);
             //return response;
          });
      }else
