@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "GetTrainStatus",
+      "slots": [
+        {
+          "name": "TrainLine",
+          "type": "LITERAL"
+        }
+      ]
+    }
+  ]
+}

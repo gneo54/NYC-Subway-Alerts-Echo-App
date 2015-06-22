@@ -1,0 +1,19 @@
+GetTrainStatus what is the train status of the {one|TrainLine} train
+GetTrainStatus what is the train status of the {one|TrainLine} 
+
+GetTrainStatus what is the status of the {one.|TrainLine}
+
+GetTrainStatus what is the train status of the {n.|TrainLine} line
+GetTrainStatus what is the train status of the {a.|TrainLine} line
+
+GetTrainStatus the {a.|TrainLine} train line
+GetTrainStatus the {a.|TrainLine} train
+GetTrainStatus {a.|TrainLine} train
+
+GetTrainStatus The {l.|TrainLine}
+
+GetTrainStatus what's the status of the {n|TrainLine} line
+GetTrainStatus what's the status of the {n|TrainLine} 
+GetTrainStatus what's the status of the {n train|TrainLine} line
+
+GetTrainStatus what is the train status for the {a|TrainLine} line
