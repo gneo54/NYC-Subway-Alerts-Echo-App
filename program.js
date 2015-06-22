@@ -221,6 +221,11 @@ function getServiceStatus(trainlineslot, getTrainStatusExCallbackfunction){
         trainlineUnderstood = true;
         translatedTrainLine = trainlineslot.toLowerCase(); 
     }   
+    else if (trainlineslot.toLowerCase() == 'seven' ){
+        trainline = '7';
+        trainlineUnderstood = true;
+        translatedTrainLine = trainlineslot.toLowerCase(); 
+    }
     else if (trainlineslot.toLowerCase() == 'a' || trainlineslot.toLowerCase() == 'c' ||  trainlineslot.toLowerCase() == 'e' || trainlineslot.toLowerCase() == 'a.' || trainlineslot.toLowerCase() == 'c.' ||  trainlineslot.toLowerCase() == 'e.'){
         trainline = 'ACE';
         trainlineUnderstood = true;
@@ -256,6 +261,17 @@ function getServiceStatus(trainlineslot, getTrainStatusExCallbackfunction){
     }
     else if (trainlineslot.toLowerCase() == 'l' || trainlineslot.toLowerCase() == 'l.'){
         trainline = 'L';
+        trainlineUnderstood = true;
+        if (trainlineslot.length>1){
+            translatedTrainLine =trainlineslot.toLowerCase().substring(0,1);
+        }
+        else
+        {
+            translatedTrainLine =trainlineslot.toLowerCase();
+        }
+    }
+    else if (trainlineslot.toLowerCase() == 'g' || trainlineslot.toLowerCase() == 'g.'){
+        trainline = 'G';
         trainlineUnderstood = true;
         if (trainlineslot.length>1){
             translatedTrainLine =trainlineslot.toLowerCase().substring(0,1);
