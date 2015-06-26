@@ -1,19 +1,1181 @@
-GetTrainStatus what is the train status of the {one|TrainLine} train
-GetTrainStatus what is the train status of the {one|TrainLine} 
+GetTrainStatus what is the train status of the {r.|TrainLine} train
+GetTrainStatus what is the train status of the {r.|TrainLine} line
+GetTrainStatus what is the train status of the {r.|TrainLine} 
+GetTrainStatus what is the status of the {r.|TrainLine} train
+GetTrainStatus what is the status of the {r.|TrainLine} line
+GetTrainStatus what is the status of the {r.|TrainLine}
+GetTrainStatus what is the train status for the {r.|TrainLine} train
+GetTrainStatus what is the train status for the {r.|TrainLine} line
+GetTrainStatus what is the train status for the {r.|TrainLine} 
+GetTrainStatus what is the status for the {r.|TrainLine}
+GetTrainStatus are there any delays on the {r.|TrainLine} train
+GetTrainStatus are there any delays on the {r.|TrainLine}
+GetTrainStatus is the {r.|TrainLine} train on schedule
+GetTrainStatus is the {r.|TrainLine} on schedule
+GetTrainStatus is the {r.|TrainLine} train ontime
+GetTrainStatus is the {r.|TrainLine} ontime
+GetTrainStatus is the {r.|TrainLine} train on time
+GetTrainStatus is the {r.|TrainLine} on time
+GetTrainStatus what's the train status of the {r.|TrainLine} train
+GetTrainStatus what's the train status of the {r.|TrainLine} line
+GetTrainStatus what's the train status of the {r.|TrainLine} 
+GetTrainStatus what's the status of the {r.|TrainLine}
+GetTrainStatus the {r.|TrainLine} train line
+GetTrainStatus the {r.|TrainLine} train
+GetTrainStatus the {r.|TrainLine}
+GetTrainStatus {r.|TrainLine} train
+GetTrainStatus the {r.|TrainLine} status
+GetTrainStatus the {r.|TrainLine} train status
+GetTrainStatus the delays on the {r.|TrainLine} train
+GetTrainStatus the delays on the {r.|TrainLine}
+GetTrainStatus  the {r.|TrainLine} train status is
+GetTrainStatus  the {r.|TrainLine} line status is
+GetTrainStatus  the {r.|TrainLine} train line status is
+GetTrainStatus  the {r.|TrainLine} status is
+GetTrainStatus what is the {r.|TrainLine} train status
+GetTrainStatus what is the {r.|TrainLine} line status
+GetTrainStatus what is the {r.|TrainLine} train line status
+GetTrainStatus what is the {r.|TrainLine} status
+GetTrainStatus give me the {r.|TrainLine} train status
+GetTrainStatus give me the {r.|TrainLine} status
+GetTrainStatus give me the {r.|TrainLine} train line status
+GetTrainStatus give me the {r.|TrainLine} line status
+GetTrainStatus get me the {r.|TrainLine} train status
+GetTrainStatus get me the {r.|TrainLine} status
+GetTrainStatus get me the {r.|TrainLine} train line status
+GetTrainStatus get me the {r.|TrainLine} line status
+GetTrainStatus find me the {r.|TrainLine} train status
+GetTrainStatus find me the {r.|TrainLine} status
+GetTrainStatus find me the {r.|TrainLine} train line status
+GetTrainStatus find me the {r.|TrainLine} line status
+GetTrainStatus tell me the {r.|TrainLine} train status
+GetTrainStatus tell me the {r.|TrainLine} status
+GetTrainStatus tell  me the {r.|TrainLine} train line status
+GetTrainStatus tell me the {r.|TrainLine} line status
 
-GetTrainStatus what is the status of the {one.|TrainLine}
-
+GetTrainStatus what is the train status of the {n.|TrainLine} train
 GetTrainStatus what is the train status of the {n.|TrainLine} line
-GetTrainStatus what is the train status of the {a.|TrainLine} line
+GetTrainStatus what is the train status of the {n.|TrainLine} 
+GetTrainStatus what is the status of the {n.|TrainLine} train
+GetTrainStatus what is the status of the {n.|TrainLine} line
+GetTrainStatus what is the status of the {n.|TrainLine}
+GetTrainStatus what is the train status for the {n.|TrainLine} train
+GetTrainStatus what is the train status for the {n.|TrainLine} line
+GetTrainStatus what is the train status for the {n.|TrainLine} 
+GetTrainStatus what is the status for the {n.|TrainLine}
+GetTrainStatus are there any delays on the {n.|TrainLine} train
+GetTrainStatus are there any delays on the {n.|TrainLine}
+GetTrainStatus is the {n.|TrainLine} train on schedule
+GetTrainStatus is the {n.|TrainLine} on schedule
+GetTrainStatus is the {n.|TrainLine} train ontime
+GetTrainStatus is the {n.|TrainLine} ontime
+GetTrainStatus is the {n.|TrainLine} train on time
+GetTrainStatus is the {n.|TrainLine} on time
+GetTrainStatus what's the train status of the {n.|TrainLine} train
+GetTrainStatus what's the train status of the {n.|TrainLine} line
+GetTrainStatus what's the train status of the {n.|TrainLine} 
+GetTrainStatus what's the status of the {n.|TrainLine}
+GetTrainStatus the {n.|TrainLine} train line
+GetTrainStatus the {n.|TrainLine} train
+GetTrainStatus the {n.|TrainLine}
+GetTrainStatus {n.|TrainLine} train
+GetTrainStatus the {n.|TrainLine} status
+GetTrainStatus the {n.|TrainLine} train status
+GetTrainStatus the delays on the {n.|TrainLine} train
+GetTrainStatus the delays on the {n.|TrainLine}
+GetTrainStatus  the {n.|TrainLine} train status is
+GetTrainStatus  the {n.|TrainLine} line status is
+GetTrainStatus  the {n.|TrainLine} train line status is
+GetTrainStatus  the {n.|TrainLine} status is
+GetTrainStatus what is the {n.|TrainLine} train status
+GetTrainStatus what is the {n.|TrainLine} line status
+GetTrainStatus what is the {n.|TrainLine} train line status
+GetTrainStatus what is the {n.|TrainLine} status
+GetTrainStatus give me the {n.|TrainLine} train status
+GetTrainStatus give me the {n.|TrainLine} status
+GetTrainStatus give me the {n.|TrainLine} train line status
+GetTrainStatus give me the {n.|TrainLine} line status
+GetTrainStatus get me the {n.|TrainLine} train status
+GetTrainStatus get me the {n.|TrainLine} status
+GetTrainStatus get me the {n.|TrainLine} train line status
+GetTrainStatus get me the {n.|TrainLine} line status
+GetTrainStatus find me the {n.|TrainLine} train status
+GetTrainStatus find me the {n.|TrainLine} status
+GetTrainStatus find me the {n.|TrainLine} train line status
+GetTrainStatus find me the {n.|TrainLine} line status
+GetTrainStatus tell me the {n.|TrainLine} train status
+GetTrainStatus tell me the {n.|TrainLine} status
+GetTrainStatus tell  me the {n.|TrainLine} train line status
+GetTrainStatus tell me the {n.|TrainLine} line status
 
+
+GetTrainStatus what is the train status of the {q.|TrainLine} train
+GetTrainStatus what is the train status of the {q.|TrainLine} line
+GetTrainStatus what is the train status of the {q.|TrainLine} 
+GetTrainStatus what is the status of the {q.|TrainLine} train
+GetTrainStatus what is the status of the {q.|TrainLine} line
+GetTrainStatus what is the status of the {q.|TrainLine}
+GetTrainStatus what is the train status for the {q.|TrainLine} train
+GetTrainStatus what is the train status for the {q.|TrainLine} line
+GetTrainStatus what is the train status for the {q.|TrainLine} 
+GetTrainStatus what is the status for the {q.|TrainLine}
+GetTrainStatus are there any delays on the {q.|TrainLine} train
+GetTrainStatus are there any delays on the {q.|TrainLine}
+GetTrainStatus is the {q.|TrainLine} train on schedule
+GetTrainStatus is the {q.|TrainLine} on schedule
+GetTrainStatus is the {q.|TrainLine} train ontime
+GetTrainStatus is the {q.|TrainLine} ontime
+GetTrainStatus is the {q.|TrainLine} train on time
+GetTrainStatus is the {q.|TrainLine} on time
+GetTrainStatus what's the train status of the {q.|TrainLine} train
+GetTrainStatus what's the train status of the {q.|TrainLine} line
+GetTrainStatus what's the train status of the {q.|TrainLine} 
+GetTrainStatus what's the status of the {q.|TrainLine}
+GetTrainStatus the {q.|TrainLine} train line
+GetTrainStatus the {q.|TrainLine} train
+GetTrainStatus the {q.|TrainLine}
+GetTrainStatus {q.|TrainLine} train
+GetTrainStatus the {q.|TrainLine} status
+GetTrainStatus the {q.|TrainLine} train status
+GetTrainStatus the delays on the {q.|TrainLine} train
+GetTrainStatus the delays on the {q.|TrainLine}
+GetTrainStatus  the {q.|TrainLine} train status is
+GetTrainStatus  the {q.|TrainLine} line status is
+GetTrainStatus  the {q.|TrainLine} train line status is
+GetTrainStatus  the {q.|TrainLine} status is
+GetTrainStatus what is the {q.|TrainLine} train status
+GetTrainStatus what is the {q.|TrainLine} line status
+GetTrainStatus what is the {q.|TrainLine} train line status
+GetTrainStatus what is the {q.|TrainLine} status
+GetTrainStatus give me the {q.|TrainLine} train status
+GetTrainStatus give me the {q.|TrainLine} status
+GetTrainStatus give me the {q.|TrainLine} train line status
+GetTrainStatus give me the {q.|TrainLine} line status
+GetTrainStatus get me the {q.|TrainLine} train status
+GetTrainStatus get me the {q.|TrainLine} status
+GetTrainStatus get me the {q.|TrainLine} train line status
+GetTrainStatus get me the {q.|TrainLine} line status
+GetTrainStatus find me the {q.|TrainLine} train status
+GetTrainStatus find me the {q.|TrainLine} status
+GetTrainStatus find me the {q.|TrainLine} train line status
+GetTrainStatus find me the {q.|TrainLine} line status
+GetTrainStatus tell me the {q.|TrainLine} train status
+GetTrainStatus tell me the {q.|TrainLine} status
+GetTrainStatus tell  me the {q.|TrainLine} train line status
+GetTrainStatus tell me the {q.|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {j.|TrainLine} train
+GetTrainStatus what is the train status of the {j.|TrainLine} line
+GetTrainStatus what is the train status of the {j.|TrainLine} 
+GetTrainStatus what is the status of the {j.|TrainLine} train
+GetTrainStatus what is the status of the {j.|TrainLine} line
+GetTrainStatus what is the status of the {j.|TrainLine}
+GetTrainStatus what is the train status for the {j.|TrainLine} train
+GetTrainStatus what is the train status for the {j.|TrainLine} line
+GetTrainStatus what is the train status for the {j.|TrainLine} 
+GetTrainStatus what is the status for the {j.|TrainLine}
+GetTrainStatus are there any delays on the {j.|TrainLine} train
+GetTrainStatus are there any delays on the {j.|TrainLine}
+GetTrainStatus is the {j.|TrainLine} train on schedule
+GetTrainStatus is the {j.|TrainLine} on schedule
+GetTrainStatus is the {j.|TrainLine} train ontime
+GetTrainStatus is the {j.|TrainLine} ontime
+GetTrainStatus is the {j.|TrainLine} train on time
+GetTrainStatus is the {j.|TrainLine} on time
+GetTrainStatus what's the train status of the {j.|TrainLine} train
+GetTrainStatus what's the train status of the {j.|TrainLine} line
+GetTrainStatus what's the train status of the {j.|TrainLine} 
+GetTrainStatus what's the status of the {j.|TrainLine}
+GetTrainStatus the {j.|TrainLine} train line
+GetTrainStatus the {j.|TrainLine} train
+GetTrainStatus the {j.|TrainLine}
+GetTrainStatus {j.|TrainLine} train
+GetTrainStatus the {j.|TrainLine} status
+GetTrainStatus the {j.|TrainLine} train status
+GetTrainStatus the delays on the {j.|TrainLine} train
+GetTrainStatus the delays on the {j.|TrainLine}
+GetTrainStatus  the {j.|TrainLine} train status is
+GetTrainStatus  the {j.|TrainLine} line status is
+GetTrainStatus  the {j.|TrainLine} train line status is
+GetTrainStatus  the {j.|TrainLine} status is
+GetTrainStatus what is the {j.|TrainLine} train status
+GetTrainStatus what is the {j.|TrainLine} line status
+GetTrainStatus what is the {j.|TrainLine} train line status
+GetTrainStatus what is the {j.|TrainLine} status
+GetTrainStatus give me the {j.|TrainLine} train status
+GetTrainStatus give me the {j.|TrainLine} status
+GetTrainStatus give me the {j.|TrainLine} train line status
+GetTrainStatus give me the {j.|TrainLine} line status
+GetTrainStatus get me the {j.|TrainLine} train status
+GetTrainStatus get me the {j.|TrainLine} status
+GetTrainStatus get me the {j.|TrainLine} train line status
+GetTrainStatus get me the {j.|TrainLine} line status
+GetTrainStatus find me the {j.|TrainLine} train status
+GetTrainStatus find me the {j.|TrainLine} status
+GetTrainStatus find me the {j.|TrainLine} train line status
+GetTrainStatus find me the {j.|TrainLine} line status
+GetTrainStatus tell me the {j.|TrainLine} train status
+GetTrainStatus tell me the {j.|TrainLine} status
+GetTrainStatus tell  me the {j.|TrainLine} train line status
+GetTrainStatus tell me the {j.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {z.|TrainLine} train
+GetTrainStatus what is the train status of the {z.|TrainLine} line
+GetTrainStatus what is the train status of the {z.|TrainLine} 
+GetTrainStatus what is the status of the {z.|TrainLine} train
+GetTrainStatus what is the status of the {z.|TrainLine} line
+GetTrainStatus what is the status of the {z.|TrainLine}
+GetTrainStatus what is the train status for the {z.|TrainLine} train
+GetTrainStatus what is the train status for the {z.|TrainLine} line
+GetTrainStatus what is the train status for the {z.|TrainLine} 
+GetTrainStatus what is the status for the {z.|TrainLine}
+GetTrainStatus are there any delays on the {z.|TrainLine} train
+GetTrainStatus are there any delays on the {z.|TrainLine}
+GetTrainStatus is the {z.|TrainLine} train on schedule
+GetTrainStatus is the {z.|TrainLine} on schedule
+GetTrainStatus is the {z.|TrainLine} train ontime
+GetTrainStatus is the {z.|TrainLine} ontime
+GetTrainStatus is the {z.|TrainLine} train on time
+GetTrainStatus is the {z.|TrainLine} on time
+GetTrainStatus what's the train status of the {z.|TrainLine} train
+GetTrainStatus what's the train status of the {z.|TrainLine} line
+GetTrainStatus what's the train status of the {z.|TrainLine} 
+GetTrainStatus what's the status of the {z.|TrainLine}
+GetTrainStatus the {z.|TrainLine} train line
+GetTrainStatus the {z.|TrainLine} train
+GetTrainStatus the {z.|TrainLine}
+GetTrainStatus {z.|TrainLine} train
+GetTrainStatus the {z.|TrainLine} status
+GetTrainStatus the {z.|TrainLine} train status
+GetTrainStatus the delays on the {z.|TrainLine} train
+GetTrainStatus the delays on the {z.|TrainLine}
+GetTrainStatus  the {z.|TrainLine} train status is
+GetTrainStatus  the {z.|TrainLine} line status is
+GetTrainStatus  the {z.|TrainLine} train line status is
+GetTrainStatus  the {z.|TrainLine} status is
+GetTrainStatus what is the {z.|TrainLine} train status
+GetTrainStatus what is the {z.|TrainLine} line status
+GetTrainStatus what is the {z.|TrainLine} train line status
+GetTrainStatus what is the {z.|TrainLine} status
+GetTrainStatus give me the {z.|TrainLine} train status
+GetTrainStatus give me the {z.|TrainLine} status
+GetTrainStatus give me the {z.|TrainLine} train line status
+GetTrainStatus give me the {z.|TrainLine} line status
+GetTrainStatus get me the {z.|TrainLine} train status
+GetTrainStatus get me the {z.|TrainLine} status
+GetTrainStatus get me the {z.|TrainLine} train line status
+GetTrainStatus get me the {z.|TrainLine} line status
+GetTrainStatus find me the {z.|TrainLine} train status
+GetTrainStatus find me the {z.|TrainLine} status
+GetTrainStatus find me the {z.|TrainLine} train line status
+GetTrainStatus find me the {z.|TrainLine} line status
+GetTrainStatus tell me the {z.|TrainLine} train status
+GetTrainStatus tell me the {z.|TrainLine} status
+GetTrainStatus tell  me the {z.|TrainLine} train line status
+GetTrainStatus tell me the {z.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {g.|TrainLine} train
+GetTrainStatus what is the train status of the {g.|TrainLine} line
+GetTrainStatus what is the train status of the {g.|TrainLine} 
+GetTrainStatus what is the status of the {g.|TrainLine} train
+GetTrainStatus what is the status of the {g.|TrainLine} line
+GetTrainStatus what is the status of the {g.|TrainLine}
+GetTrainStatus what is the train status for the {g.|TrainLine} train
+GetTrainStatus what is the train status for the {g.|TrainLine} line
+GetTrainStatus what is the train status for the {g.|TrainLine} 
+GetTrainStatus what is the status for the {g.|TrainLine}
+GetTrainStatus are there any delays on the {g.|TrainLine} train
+GetTrainStatus are there any delays on the {g.|TrainLine}
+GetTrainStatus is the {g.|TrainLine} train on schedule
+GetTrainStatus is the {g.|TrainLine} on schedule
+GetTrainStatus is the {g.|TrainLine} train ontime
+GetTrainStatus is the {g.|TrainLine} ontime
+GetTrainStatus is the {g.|TrainLine} train on time
+GetTrainStatus is the {g.|TrainLine} on time
+GetTrainStatus what's the train status of the {g.|TrainLine} train
+GetTrainStatus what's the train status of the {g.|TrainLine} line
+GetTrainStatus what's the train status of the {g.|TrainLine} 
+GetTrainStatus what's the status of the {g.|TrainLine}
+GetTrainStatus the {g.|TrainLine} train line
+GetTrainStatus the {g.|TrainLine} train
+GetTrainStatus the {g.|TrainLine}
+GetTrainStatus {g.|TrainLine} train
+GetTrainStatus the {g.|TrainLine} status
+GetTrainStatus the {g.|TrainLine} train status
+GetTrainStatus the delays on the {g.|TrainLine} train
+GetTrainStatus the delays on the {g.|TrainLine}
+GetTrainStatus  the {g.|TrainLine} train status is
+GetTrainStatus  the {g.|TrainLine} line status is
+GetTrainStatus  the {g.|TrainLine} train line status is
+GetTrainStatus  the {g.|TrainLine} status is
+GetTrainStatus what is the {g.|TrainLine} train status
+GetTrainStatus what is the {g.|TrainLine} line status
+GetTrainStatus what is the {g.|TrainLine} train line status
+GetTrainStatus what is the {g.|TrainLine} status
+GetTrainStatus give me the {g.|TrainLine} train status
+GetTrainStatus give me the {g.|TrainLine} status
+GetTrainStatus give me the {g.|TrainLine} train line status
+GetTrainStatus give me the {g.|TrainLine} line status
+GetTrainStatus get me the {g.|TrainLine} train status
+GetTrainStatus get me the {g.|TrainLine} status
+GetTrainStatus get me the {g.|TrainLine} train line status
+GetTrainStatus get me the {g.|TrainLine} line status
+GetTrainStatus find me the {g.|TrainLine} train status
+GetTrainStatus find me the {g.|TrainLine} status
+GetTrainStatus find me the {g.|TrainLine} train line status
+GetTrainStatus find me the {g.|TrainLine} line status
+GetTrainStatus tell me the {g.|TrainLine} train status
+GetTrainStatus tell me the {g.|TrainLine} status
+GetTrainStatus tell  me the {g.|TrainLine} train line status
+GetTrainStatus tell me the {g.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {l.|TrainLine} train
+GetTrainStatus what is the train status of the {l.|TrainLine} line
+GetTrainStatus what is the train status of the {l.|TrainLine} 
+GetTrainStatus what is the status of the {l.|TrainLine} train
+GetTrainStatus what is the status of the {l.|TrainLine} line
+GetTrainStatus what is the status of the {l.|TrainLine}
+GetTrainStatus what is the train status for the {l.|TrainLine} train
+GetTrainStatus what is the train status for the {l.|TrainLine} line
+GetTrainStatus what is the train status for the {l.|TrainLine} 
+GetTrainStatus what is the status for the {l.|TrainLine}
+GetTrainStatus are there any delays on the {l.|TrainLine} train
+GetTrainStatus are there any delays on the {l.|TrainLine}
+GetTrainStatus is the {l.|TrainLine} train on schedule
+GetTrainStatus is the {l.|TrainLine} on schedule
+GetTrainStatus is the {l.|TrainLine} train ontime
+GetTrainStatus is the {l.|TrainLine} ontime
+GetTrainStatus is the {l.|TrainLine} train on time
+GetTrainStatus is the {l.|TrainLine} on time
+GetTrainStatus what's the train status of the {l.|TrainLine} train
+GetTrainStatus what's the train status of the {l.|TrainLine} line
+GetTrainStatus what's the train status of the {l.|TrainLine} 
+GetTrainStatus what's the status of the {l.|TrainLine}
+GetTrainStatus the {l.|TrainLine} train line
+GetTrainStatus the {l.|TrainLine} train
+GetTrainStatus the {l.|TrainLine}
+GetTrainStatus {l.|TrainLine} train
+GetTrainStatus the {l.|TrainLine} status
+GetTrainStatus the {l.|TrainLine} train status
+GetTrainStatus the delays on the {l.|TrainLine} train
+GetTrainStatus the delays on the {l.|TrainLine}
+GetTrainStatus  the {l.|TrainLine} train status is
+GetTrainStatus  the {l.|TrainLine} line status is
+GetTrainStatus  the {l.|TrainLine} train line status is
+GetTrainStatus  the {l.|TrainLine} status is
+GetTrainStatus what is the {l.|TrainLine} train status
+GetTrainStatus what is the {l.|TrainLine} line status
+GetTrainStatus what is the {l.|TrainLine} train line status
+GetTrainStatus what is the {l.|TrainLine} status
+GetTrainStatus give me the {l.|TrainLine} train status
+GetTrainStatus give me the {l.|TrainLine} status
+GetTrainStatus give me the {l.|TrainLine} train line status
+GetTrainStatus give me the {l.|TrainLine} line status
+GetTrainStatus get me the {l.|TrainLine} train status
+GetTrainStatus get me the {l.|TrainLine} status
+GetTrainStatus get me the {l.|TrainLine} train line status
+GetTrainStatus get me the {l.|TrainLine} line status
+GetTrainStatus find me the {l.|TrainLine} train status
+GetTrainStatus find me the {l.|TrainLine} status
+GetTrainStatus find me the {l.|TrainLine} train line status
+GetTrainStatus find me the {l.|TrainLine} line status
+GetTrainStatus tell me the {l.|TrainLine} train status
+GetTrainStatus tell me the {l.|TrainLine} status
+GetTrainStatus tell  me the {l.|TrainLine} train line status
+GetTrainStatus tell me the {l.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {b.|TrainLine} train
+GetTrainStatus what is the train status of the {b.|TrainLine} line
+GetTrainStatus what is the train status of the {b.|TrainLine} 
+GetTrainStatus what is the status of the {b.|TrainLine} train
+GetTrainStatus what is the status of the {b.|TrainLine} line
+GetTrainStatus what is the status of the {b.|TrainLine}
+GetTrainStatus what is the train status for the {b.|TrainLine} train
+GetTrainStatus what is the train status for the {b.|TrainLine} line
+GetTrainStatus what is the train status for the {b.|TrainLine} 
+GetTrainStatus what is the status for the {b.|TrainLine}
+GetTrainStatus are there any delays on the {b.|TrainLine} train
+GetTrainStatus are there any delays on the {b.|TrainLine}
+GetTrainStatus is the {b.|TrainLine} train on schedule
+GetTrainStatus is the {b.|TrainLine} on schedule
+GetTrainStatus is the {b.|TrainLine} train ontime
+GetTrainStatus is the {b.|TrainLine} ontime
+GetTrainStatus is the {b.|TrainLine} train on time
+GetTrainStatus is the {b.|TrainLine} on time
+GetTrainStatus what's the train status of the {b.|TrainLine} train
+GetTrainStatus what's the train status of the {b.|TrainLine} line
+GetTrainStatus what's the train status of the {b.|TrainLine} 
+GetTrainStatus what's the status of the {b.|TrainLine}
+GetTrainStatus the {b.|TrainLine} train line
+GetTrainStatus the {b.|TrainLine} train
+GetTrainStatus the {b.|TrainLine}
+GetTrainStatus {b.|TrainLine} train
+GetTrainStatus the {b.|TrainLine} status
+GetTrainStatus the {b.|TrainLine} train status
+GetTrainStatus the delays on the {b.|TrainLine} train
+GetTrainStatus the delays on the {b.|TrainLine}
+GetTrainStatus  the {b.|TrainLine} train status is
+GetTrainStatus  the {b.|TrainLine} line status is
+GetTrainStatus  the {b.|TrainLine} train line status is
+GetTrainStatus  the {b.|TrainLine} status is
+GetTrainStatus what is the {b.|TrainLine} train status
+GetTrainStatus what is the {b.|TrainLine} line status
+GetTrainStatus what is the {b.|TrainLine} train line status
+GetTrainStatus what is the {b.|TrainLine} status
+GetTrainStatus give me the {b.|TrainLine} train status
+GetTrainStatus give me the {b.|TrainLine} status
+GetTrainStatus give me the {b.|TrainLine} train line status
+GetTrainStatus give me the {b.|TrainLine} line status
+GetTrainStatus get me the {b.|TrainLine} train status
+GetTrainStatus get me the {b.|TrainLine} status
+GetTrainStatus get me the {b.|TrainLine} train line status
+GetTrainStatus get me the {b.|TrainLine} line status
+GetTrainStatus find me the {b.|TrainLine} train status
+GetTrainStatus find me the {b.|TrainLine} status
+GetTrainStatus find me the {b.|TrainLine} train line status
+GetTrainStatus find me the {b.|TrainLine} line status
+GetTrainStatus tell me the {b.|TrainLine} train status
+GetTrainStatus tell me the {b.|TrainLine} status
+GetTrainStatus tell  me the {b.|TrainLine} train line status
+GetTrainStatus tell me the {b.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {d.|TrainLine} train
+GetTrainStatus what is the train status of the {d.|TrainLine} line
+GetTrainStatus what is the train status of the {d.|TrainLine} 
+GetTrainStatus what is the status of the {d.|TrainLine} train
+GetTrainStatus what is the status of the {d.|TrainLine} line
+GetTrainStatus what is the status of the {d.|TrainLine}
+GetTrainStatus what is the train status for the {d.|TrainLine} train
+GetTrainStatus what is the train status for the {d.|TrainLine} line
+GetTrainStatus what is the train status for the {d.|TrainLine} 
+GetTrainStatus what is the status for the {d.|TrainLine}
+GetTrainStatus are there any delays on the {d.|TrainLine} train
+GetTrainStatus are there any delays on the {d.|TrainLine}
+GetTrainStatus is the {d.|TrainLine} train on schedule
+GetTrainStatus is the {d.|TrainLine} on schedule
+GetTrainStatus is the {d.|TrainLine} train ontime
+GetTrainStatus is the {d.|TrainLine} ontime
+GetTrainStatus is the {d.|TrainLine} train on time
+GetTrainStatus is the {d.|TrainLine} on time
+GetTrainStatus what's the train status of the {d.|TrainLine} train
+GetTrainStatus what's the train status of the {d.|TrainLine} line
+GetTrainStatus what's the train status of the {d.|TrainLine} 
+GetTrainStatus what's the status of the {d.|TrainLine}
+GetTrainStatus the {d.|TrainLine} train line
+GetTrainStatus the {d.|TrainLine} train
+GetTrainStatus the {d.|TrainLine}
+GetTrainStatus {d.|TrainLine} train
+GetTrainStatus the {d.|TrainLine} status
+GetTrainStatus the {d.|TrainLine} train status
+GetTrainStatus the delays on the {d.|TrainLine} train
+GetTrainStatus the delays on the {d.|TrainLine}
+GetTrainStatus  the {d.|TrainLine} train status is
+GetTrainStatus  the {d.|TrainLine} line status is
+GetTrainStatus  the {d.|TrainLine} train line status is
+GetTrainStatus  the {d.|TrainLine} status is
+GetTrainStatus what is the {d.|TrainLine} train status
+GetTrainStatus what is the {d.|TrainLine} line status
+GetTrainStatus what is the {d.|TrainLine} train line status
+GetTrainStatus what is the {d.|TrainLine} status
+GetTrainStatus give me the {d.|TrainLine} train status
+GetTrainStatus give me the {d.|TrainLine} status
+GetTrainStatus give me the {d.|TrainLine} train line status
+GetTrainStatus give me the {d.|TrainLine} line status
+GetTrainStatus get me the {d.|TrainLine} train status
+GetTrainStatus get me the {d.|TrainLine} status
+GetTrainStatus get me the {d.|TrainLine} train line status
+GetTrainStatus get me the {d.|TrainLine} line status
+GetTrainStatus find me the {d.|TrainLine} train status
+GetTrainStatus find me the {d.|TrainLine} status
+GetTrainStatus find me the {d.|TrainLine} train line status
+GetTrainStatus find me the {d.|TrainLine} line status
+GetTrainStatus tell me the {d.|TrainLine} train status
+GetTrainStatus tell me the {d.|TrainLine} status
+GetTrainStatus tell  me the {d.|TrainLine} train line status
+GetTrainStatus tell me the {d.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {f.|TrainLine} train
+GetTrainStatus what is the train status of the {f.|TrainLine} line
+GetTrainStatus what is the train status of the {f.|TrainLine} 
+GetTrainStatus what is the status of the {f.|TrainLine} train
+GetTrainStatus what is the status of the {f.|TrainLine} line
+GetTrainStatus what is the status of the {f.|TrainLine}
+GetTrainStatus what is the train status for the {f.|TrainLine} train
+GetTrainStatus what is the train status for the {f.|TrainLine} line
+GetTrainStatus what is the train status for the {f.|TrainLine} 
+GetTrainStatus what is the status for the {f.|TrainLine}
+GetTrainStatus are there any delays on the {f.|TrainLine} train
+GetTrainStatus are there any delays on the {f.|TrainLine}
+GetTrainStatus is the {f.|TrainLine} train on schedule
+GetTrainStatus is the {f.|TrainLine} on schedule
+GetTrainStatus is the {f.|TrainLine} train ontime
+GetTrainStatus is the {f.|TrainLine} ontime
+GetTrainStatus is the {f.|TrainLine} train on time
+GetTrainStatus is the {f.|TrainLine} on time
+GetTrainStatus what's the train status of the {f.|TrainLine} train
+GetTrainStatus what's the train status of the {f.|TrainLine} line
+GetTrainStatus what's the train status of the {f.|TrainLine} 
+GetTrainStatus what's the status of the {f.|TrainLine}
+GetTrainStatus the {f.|TrainLine} train line
+GetTrainStatus the {f.|TrainLine} train
+GetTrainStatus the {f.|TrainLine}
+GetTrainStatus {f.|TrainLine} train
+GetTrainStatus the {f.|TrainLine} status
+GetTrainStatus the {f.|TrainLine} train status
+GetTrainStatus the delays on the {f.|TrainLine} train
+GetTrainStatus the delays on the {f.|TrainLine}
+GetTrainStatus  the {f.|TrainLine} train status is
+GetTrainStatus  the {f.|TrainLine} line status is
+GetTrainStatus  the {f.|TrainLine} train line status is
+GetTrainStatus  the {f.|TrainLine} status is
+GetTrainStatus what is the {f.|TrainLine} train status
+GetTrainStatus what is the {f.|TrainLine} line status
+GetTrainStatus what is the {f.|TrainLine} train line status
+GetTrainStatus what is the {f.|TrainLine} status
+GetTrainStatus give me the {f.|TrainLine} train status
+GetTrainStatus give me the {f.|TrainLine} status
+GetTrainStatus give me the {f.|TrainLine} train line status
+GetTrainStatus give me the {f.|TrainLine} line status
+GetTrainStatus get me the {f.|TrainLine} train status
+GetTrainStatus get me the {f.|TrainLine} status
+GetTrainStatus get me the {f.|TrainLine} train line status
+GetTrainStatus get me the {f.|TrainLine} line status
+GetTrainStatus find me the {f.|TrainLine} train status
+GetTrainStatus find me the {f.|TrainLine} status
+GetTrainStatus find me the {f.|TrainLine} train line status
+GetTrainStatus find me the {f.|TrainLine} line status
+GetTrainStatus tell me the {f.|TrainLine} train status
+GetTrainStatus tell me the {f.|TrainLine} status
+GetTrainStatus tell  me the {f.|TrainLine} train line status
+GetTrainStatus tell me the {f.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {m.|TrainLine} train
+GetTrainStatus what is the train status of the {m.|TrainLine} line
+GetTrainStatus what is the train status of the {m.|TrainLine} 
+GetTrainStatus what is the status of the {m.|TrainLine} train
+GetTrainStatus what is the status of the {m.|TrainLine} line
+GetTrainStatus what is the status of the {m.|TrainLine}
+GetTrainStatus what is the train status for the {m.|TrainLine} train
+GetTrainStatus what is the train status for the {m.|TrainLine} line
+GetTrainStatus what is the train status for the {m.|TrainLine} 
+GetTrainStatus what is the status for the {m.|TrainLine}
+GetTrainStatus are there any delays on the {m.|TrainLine} train
+GetTrainStatus are there any delays on the {m.|TrainLine}
+GetTrainStatus is the {m.|TrainLine} train on schedule
+GetTrainStatus is the {m.|TrainLine} on schedule
+GetTrainStatus is the {m.|TrainLine} train ontime
+GetTrainStatus is the {m.|TrainLine} ontime
+GetTrainStatus is the {m.|TrainLine} train on time
+GetTrainStatus is the {m.|TrainLine} on time
+GetTrainStatus what's the train status of the {m.|TrainLine} train
+GetTrainStatus what's the train status of the {m.|TrainLine} line
+GetTrainStatus what's the train status of the {m.|TrainLine} 
+GetTrainStatus what's the status of the {m.|TrainLine}
+GetTrainStatus the {m.|TrainLine} train line
+GetTrainStatus the {m.|TrainLine} train
+GetTrainStatus the {m.|TrainLine}
+GetTrainStatus {m.|TrainLine} train
+GetTrainStatus the {m.|TrainLine} status
+GetTrainStatus the {m.|TrainLine} train status
+GetTrainStatus the delays on the {m.|TrainLine} train
+GetTrainStatus the delays on the {m.|TrainLine}
+GetTrainStatus  the {m.|TrainLine} train status is
+GetTrainStatus  the {m.|TrainLine} line status is
+GetTrainStatus  the {m.|TrainLine} train line status is
+GetTrainStatus  the {m.|TrainLine} status is
+GetTrainStatus what is the {m.|TrainLine} train status
+GetTrainStatus what is the {m.|TrainLine} line status
+GetTrainStatus what is the {m.|TrainLine} train line status
+GetTrainStatus what is the {m.|TrainLine} status
+GetTrainStatus give me the {m.|TrainLine} train status
+GetTrainStatus give me the {m.|TrainLine} status
+GetTrainStatus give me the {m.|TrainLine} train line status
+GetTrainStatus give me the {m.|TrainLine} line status
+GetTrainStatus get me the {m.|TrainLine} train status
+GetTrainStatus get me the {m.|TrainLine} status
+GetTrainStatus get me the {m.|TrainLine} train line status
+GetTrainStatus get me the {m.|TrainLine} line status
+GetTrainStatus find me the {m.|TrainLine} train status
+GetTrainStatus find me the {m.|TrainLine} status
+GetTrainStatus find me the {m.|TrainLine} train line status
+GetTrainStatus find me the {m.|TrainLine} line status
+GetTrainStatus tell me the {m.|TrainLine} train status
+GetTrainStatus tell me the {m.|TrainLine} status
+GetTrainStatus tell  me the {m.|TrainLine} train line status
+GetTrainStatus tell me the {m.|TrainLine} line status
+
+
+GetTrainStatus what is the train status of the {a.|TrainLine} train
+GetTrainStatus what is the train status of the {a.|TrainLine} line
+GetTrainStatus what is the train status of the {a.|TrainLine} 
+GetTrainStatus what is the status of the {a.|TrainLine} train
+GetTrainStatus what is the status of the {a.|TrainLine} line
+GetTrainStatus what is the status of the {a.|TrainLine}
+GetTrainStatus what is the train status for the {a.|TrainLine} train
+GetTrainStatus what is the train status for the {a.|TrainLine} line
+GetTrainStatus what is the train status for the {a.|TrainLine} 
+GetTrainStatus what is the status for the {a.|TrainLine}
+GetTrainStatus are there any delays on the {a.|TrainLine} train
+GetTrainStatus are there any delays on the {a.|TrainLine}
+GetTrainStatus is the {a.|TrainLine} train on schedule
+GetTrainStatus is the {a.|TrainLine} on schedule
+GetTrainStatus is the {a.|TrainLine} train ontime
+GetTrainStatus is the {a.|TrainLine} ontime
+GetTrainStatus is the {a.|TrainLine} train on time
+GetTrainStatus is the {a.|TrainLine} on time
+GetTrainStatus what's the train status of the {a.|TrainLine} train
+GetTrainStatus what's the train status of the {a.|TrainLine} line
+GetTrainStatus what's the train status of the {a.|TrainLine} 
+GetTrainStatus what's the status of the {a.|TrainLine}
 GetTrainStatus the {a.|TrainLine} train line
 GetTrainStatus the {a.|TrainLine} train
+GetTrainStatus the {a.|TrainLine}
 GetTrainStatus {a.|TrainLine} train
+GetTrainStatus the {a.|TrainLine} status
+GetTrainStatus the {a.|TrainLine} train status
+GetTrainStatus the delays on the {a.|TrainLine} train
+GetTrainStatus the delays on the {a.|TrainLine}
+GetTrainStatus  the {a.|TrainLine} train status is
+GetTrainStatus  the {a.|TrainLine} line status is
+GetTrainStatus  the {a.|TrainLine} train line status is
+GetTrainStatus  the {a.|TrainLine} status is
+GetTrainStatus what is the {a.|TrainLine} train status
+GetTrainStatus what is the {a.|TrainLine} line status
+GetTrainStatus what is the {a.|TrainLine} train line status
+GetTrainStatus what is the {a.|TrainLine} status
+GetTrainStatus give me the {a.|TrainLine} train status
+GetTrainStatus give me the {a.|TrainLine} status
+GetTrainStatus give me the {a.|TrainLine} train line status
+GetTrainStatus give me the {a.|TrainLine} line status
+GetTrainStatus get me the {a.|TrainLine} train status
+GetTrainStatus get me the {a.|TrainLine} status
+GetTrainStatus get me the {a.|TrainLine} train line status
+GetTrainStatus get me the {a.|TrainLine} line status
+GetTrainStatus find me the {a.|TrainLine} train status
+GetTrainStatus find me the {a.|TrainLine} status
+GetTrainStatus find me the {a.|TrainLine} train line status
+GetTrainStatus find me the {a.|TrainLine} line status
+GetTrainStatus tell me the {a.|TrainLine} train status
+GetTrainStatus tell me the {a.|TrainLine} status
+GetTrainStatus tell  me the {a.|TrainLine} train line status
+GetTrainStatus tell me the {a.|TrainLine} line status
 
-GetTrainStatus The {l.|TrainLine}
 
-GetTrainStatus what's the status of the {n|TrainLine} line
-GetTrainStatus what's the status of the {n|TrainLine} 
-GetTrainStatus what's the status of the {n train|TrainLine} line
+GetTrainStatus what is the train status of the {c.|TrainLine} train
+GetTrainStatus what is the train status of the {c.|TrainLine} line
+GetTrainStatus what is the train status of the {c.|TrainLine} 
+GetTrainStatus what is the status of the {c.|TrainLine} train
+GetTrainStatus what is the status of the {c.|TrainLine} line
+GetTrainStatus what is the status of the {c.|TrainLine}
+GetTrainStatus what is the train status for the {c.|TrainLine} train
+GetTrainStatus what is the train status for the {c.|TrainLine} line
+GetTrainStatus what is the train status for the {c.|TrainLine} 
+GetTrainStatus what is the status for the {c.|TrainLine}
+GetTrainStatus are there any delays on the {c.|TrainLine} train
+GetTrainStatus are there any delays on the {c.|TrainLine}
+GetTrainStatus is the {c.|TrainLine} train on schedule
+GetTrainStatus is the {c.|TrainLine} on schedule
+GetTrainStatus is the {c.|TrainLine} train ontime
+GetTrainStatus is the {c.|TrainLine} ontime
+GetTrainStatus is the {c.|TrainLine} train on time
+GetTrainStatus is the {c.|TrainLine} on time
+GetTrainStatus what's the train status of the {c.|TrainLine} train
+GetTrainStatus what's the train status of the {c.|TrainLine} line
+GetTrainStatus what's the train status of the {c.|TrainLine} 
+GetTrainStatus what's the status of the {c.|TrainLine}
+GetTrainStatus the {c.|TrainLine} train line
+GetTrainStatus the {c.|TrainLine} train
+GetTrainStatus the {c.|TrainLine}
+GetTrainStatus {c.|TrainLine} train
+GetTrainStatus the {c.|TrainLine} status
+GetTrainStatus the {c.|TrainLine} train status
+GetTrainStatus the delays on the {c.|TrainLine} train
+GetTrainStatus the delays on the {c.|TrainLine}
+GetTrainStatus  the {c.|TrainLine} train status is
+GetTrainStatus  the {c.|TrainLine} line status is
+GetTrainStatus  the {c.|TrainLine} train line status is
+GetTrainStatus  the {c.|TrainLine} status is
+GetTrainStatus what is the {c.|TrainLine} train status
+GetTrainStatus what is the {c.|TrainLine} line status
+GetTrainStatus what is the {c.|TrainLine} train line status
+GetTrainStatus what is the {c.|TrainLine} status
+GetTrainStatus give me the {c.|TrainLine} train status
+GetTrainStatus give me the {c.|TrainLine} status
+GetTrainStatus give me the {c.|TrainLine} train line status
+GetTrainStatus give me the {c.|TrainLine} line status
+GetTrainStatus get me the {c.|TrainLine} train status
+GetTrainStatus get me the {c.|TrainLine} status
+GetTrainStatus get me the {c.|TrainLine} train line status
+GetTrainStatus get me the {c.|TrainLine} line status
+GetTrainStatus find me the {c.|TrainLine} train status
+GetTrainStatus find me the {c.|TrainLine} status
+GetTrainStatus find me the {c.|TrainLine} train line status
+GetTrainStatus find me the {c.|TrainLine} line status
+GetTrainStatus tell me the {c.|TrainLine} train status
+GetTrainStatus tell me the {c.|TrainLine} status
+GetTrainStatus tell  me the {c.|TrainLine} train line status
+GetTrainStatus tell me the {c.|TrainLine} line status
 
-GetTrainStatus what is the train status for the {a|TrainLine} line
+
+GetTrainStatus what is the train status of the {e.|TrainLine} train
+GetTrainStatus what is the train status of the {e.|TrainLine} line
+GetTrainStatus what is the train status of the {e.|TrainLine} 
+GetTrainStatus what is the status of the {e.|TrainLine} train
+GetTrainStatus what is the status of the {e.|TrainLine} line
+GetTrainStatus what is the status of the {e.|TrainLine}
+GetTrainStatus what is the train status for the {e.|TrainLine} train
+GetTrainStatus what is the train status for the {e.|TrainLine} line
+GetTrainStatus what is the train status for the {e.|TrainLine} 
+GetTrainStatus what is the status for the {e.|TrainLine}
+GetTrainStatus are there any delays on the {e.|TrainLine} train
+GetTrainStatus are there any delays on the {e.|TrainLine}
+GetTrainStatus is the {e.|TrainLine} train on schedule
+GetTrainStatus is the {e.|TrainLine} on schedule
+GetTrainStatus is the {e.|TrainLine} train ontime
+GetTrainStatus is the {e.|TrainLine} ontime
+GetTrainStatus is the {e.|TrainLine} train on time
+GetTrainStatus is the {e.|TrainLine} on time
+GetTrainStatus what's the train status of the {e.|TrainLine} train
+GetTrainStatus what's the train status of the {e.|TrainLine} line
+GetTrainStatus what's the train status of the {e.|TrainLine} 
+GetTrainStatus what's the status of the {e.|TrainLine}
+GetTrainStatus the {e.|TrainLine} train line
+GetTrainStatus the {e.|TrainLine} train
+GetTrainStatus the {e.|TrainLine}
+GetTrainStatus {e.|TrainLine} train
+GetTrainStatus the {e.|TrainLine} status
+GetTrainStatus the {e.|TrainLine} train status
+GetTrainStatus the delays on the {e.|TrainLine} train
+GetTrainStatus the delays on the {e.|TrainLine}
+GetTrainStatus  the {e.|TrainLine} train status is
+GetTrainStatus  the {e.|TrainLine} line status is
+GetTrainStatus  the {e.|TrainLine} train line status is
+GetTrainStatus  the {e.|TrainLine} status is
+GetTrainStatus what is the {e.|TrainLine} train status
+GetTrainStatus what is the {e.|TrainLine} line status
+GetTrainStatus what is the {e.|TrainLine} train line status
+GetTrainStatus what is the {e.|TrainLine} status
+GetTrainStatus give me the {e.|TrainLine} train status
+GetTrainStatus give me the {e.|TrainLine} status
+GetTrainStatus give me the {e.|TrainLine} train line status
+GetTrainStatus give me the {e.|TrainLine} line status
+GetTrainStatus get me the {e.|TrainLine} train status
+GetTrainStatus get me the {e.|TrainLine} status
+GetTrainStatus get me the {e.|TrainLine} train line status
+GetTrainStatus get me the {e.|TrainLine} line status
+GetTrainStatus find me the {e.|TrainLine} train status
+GetTrainStatus find me the {e.|TrainLine} status
+GetTrainStatus find me the {e.|TrainLine} train line status
+GetTrainStatus find me the {e.|TrainLine} line status
+GetTrainStatus tell me the {e.|TrainLine} train status
+GetTrainStatus tell me the {e.|TrainLine} status
+GetTrainStatus tell  me the {e.|TrainLine} train line status
+GetTrainStatus tell me the {e.|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {seven|TrainLine} train
+GetTrainStatus what is the train status of the {seven|TrainLine} line
+GetTrainStatus what is the train status of the {seven|TrainLine} 
+GetTrainStatus what is the status of the {seven|TrainLine} train
+GetTrainStatus what is the status of the {seven|TrainLine} line
+GetTrainStatus what is the status of the {seven|TrainLine}
+GetTrainStatus what is the train status for the {seven|TrainLine} train
+GetTrainStatus what is the train status for the {seven|TrainLine} line
+GetTrainStatus what is the train status for the {seven|TrainLine} 
+GetTrainStatus what is the status for the {seven|TrainLine}
+GetTrainStatus are there any delays on the {seven|TrainLine} train
+GetTrainStatus are there any delays on the {seven|TrainLine}
+GetTrainStatus is the {seven|TrainLine} train on schedule
+GetTrainStatus is the {seven|TrainLine} on schedule
+GetTrainStatus is the {seven|TrainLine} train ontime
+GetTrainStatus is the {seven|TrainLine} ontime
+GetTrainStatus is the {seven|TrainLine} train on time
+GetTrainStatus is the {seven|TrainLine} on time
+GetTrainStatus what's the train status of the {seven|TrainLine} train
+GetTrainStatus what's the train status of the {seven|TrainLine} line
+GetTrainStatus what's the train status of the {seven|TrainLine} 
+GetTrainStatus what's the status of the {seven|TrainLine}
+GetTrainStatus the {seven|TrainLine} train line
+GetTrainStatus the {seven|TrainLine} train
+GetTrainStatus the {seven|TrainLine}
+GetTrainStatus {seven|TrainLine} train
+GetTrainStatus the {seven|TrainLine} status
+GetTrainStatus the {seven|TrainLine} train status
+GetTrainStatus the delays on the {seven|TrainLine} train
+GetTrainStatus the delays on the {seven|TrainLine}
+GetTrainStatus  the {seven|TrainLine} train status is
+GetTrainStatus  the {seven|TrainLine} line status is
+GetTrainStatus  the {seven|TrainLine} train line status is
+GetTrainStatus  the {seven|TrainLine} status is
+GetTrainStatus what is the {seven|TrainLine} train status
+GetTrainStatus what is the {seven|TrainLine} line status
+GetTrainStatus what is the {seven|TrainLine} train line status
+GetTrainStatus what is the {seven|TrainLine} status
+GetTrainStatus give me the {seven|TrainLine} train status
+GetTrainStatus give me the {seven|TrainLine} status
+GetTrainStatus give me the {seven|TrainLine} train line status
+GetTrainStatus give me the {seven|TrainLine} line status
+GetTrainStatus get me the {seven|TrainLine} train status
+GetTrainStatus get me the {seven|TrainLine} status
+GetTrainStatus get me the {seven|TrainLine} train line status
+GetTrainStatus get me the {seven|TrainLine} line status
+GetTrainStatus find me the {seven|TrainLine} train status
+GetTrainStatus find me the {seven|TrainLine} status
+GetTrainStatus find me the {seven|TrainLine} train line status
+GetTrainStatus find me the {seven|TrainLine} line status
+GetTrainStatus tell me the {seven|TrainLine} train status
+GetTrainStatus tell me the {seven|TrainLine} status
+GetTrainStatus tell  me the {seven|TrainLine} train line status
+GetTrainStatus tell me the {seven|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {four|TrainLine} train
+GetTrainStatus what is the train status of the {four|TrainLine} line
+GetTrainStatus what is the train status of the {four|TrainLine} 
+GetTrainStatus what is the status of the {four|TrainLine} train
+GetTrainStatus what is the status of the {four|TrainLine} line
+GetTrainStatus what is the status of the {four|TrainLine}
+GetTrainStatus what is the train status for the {four|TrainLine} train
+GetTrainStatus what is the train status for the {four|TrainLine} line
+GetTrainStatus what is the train status for the {four|TrainLine} 
+GetTrainStatus what is the status for the {four|TrainLine}
+GetTrainStatus are there any delays on the {four|TrainLine} train
+GetTrainStatus are there any delays on the {four|TrainLine}
+GetTrainStatus is the {four|TrainLine} train on schedule
+GetTrainStatus is the {four|TrainLine} on schedule
+GetTrainStatus is the {four|TrainLine} train ontime
+GetTrainStatus is the {four|TrainLine} ontime
+GetTrainStatus is the {four|TrainLine} train on time
+GetTrainStatus is the {four|TrainLine} on time
+GetTrainStatus what's the train status of the {four|TrainLine} train
+GetTrainStatus what's the train status of the {four|TrainLine} line
+GetTrainStatus what's the train status of the {four|TrainLine} 
+GetTrainStatus what's the status of the {four|TrainLine}
+GetTrainStatus the {four|TrainLine} train line
+GetTrainStatus the {four|TrainLine} train
+GetTrainStatus the {four|TrainLine}
+GetTrainStatus {four|TrainLine} train
+GetTrainStatus the {four|TrainLine} status
+GetTrainStatus the {four|TrainLine} train status
+GetTrainStatus the delays on the {four|TrainLine} train
+GetTrainStatus the delays on the {four|TrainLine}
+GetTrainStatus  the {four|TrainLine} train status is
+GetTrainStatus  the {four|TrainLine} line status is
+GetTrainStatus  the {four|TrainLine} train line status is
+GetTrainStatus  the {four|TrainLine} status is
+GetTrainStatus what is the {four|TrainLine} train status
+GetTrainStatus what is the {four|TrainLine} line status
+GetTrainStatus what is the {four|TrainLine} train line status
+GetTrainStatus what is the {four|TrainLine} status
+GetTrainStatus give me the {four|TrainLine} train status
+GetTrainStatus give me the {four|TrainLine} status
+GetTrainStatus give me the {four|TrainLine} train line status
+GetTrainStatus give me the {four|TrainLine} line status
+GetTrainStatus get me the {four|TrainLine} train status
+GetTrainStatus get me the {four|TrainLine} status
+GetTrainStatus get me the {four|TrainLine} train line status
+GetTrainStatus get me the {four|TrainLine} line status
+GetTrainStatus find me the {four|TrainLine} train status
+GetTrainStatus find me the {four|TrainLine} status
+GetTrainStatus find me the {four|TrainLine} train line status
+GetTrainStatus find me the {four|TrainLine} line status
+GetTrainStatus tell me the {four|TrainLine} train status
+GetTrainStatus tell me the {four|TrainLine} status
+GetTrainStatus tell  me the {four|TrainLine} train line status
+GetTrainStatus tell me the {four|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {five|TrainLine} train
+GetTrainStatus what is the train status of the {five|TrainLine} line
+GetTrainStatus what is the train status of the {five|TrainLine} 
+GetTrainStatus what is the status of the {five|TrainLine} train
+GetTrainStatus what is the status of the {five|TrainLine} line
+GetTrainStatus what is the status of the {five|TrainLine}
+GetTrainStatus what is the train status for the {five|TrainLine} train
+GetTrainStatus what is the train status for the {five|TrainLine} line
+GetTrainStatus what is the train status for the {five|TrainLine} 
+GetTrainStatus what is the status for the {five|TrainLine}
+GetTrainStatus are there any delays on the {five|TrainLine} train
+GetTrainStatus are there any delays on the {five|TrainLine}
+GetTrainStatus is the {five|TrainLine} train on schedule
+GetTrainStatus is the {five|TrainLine} on schedule
+GetTrainStatus is the {five|TrainLine} train ontime
+GetTrainStatus is the {five|TrainLine} ontime
+GetTrainStatus is the {five|TrainLine} train on time
+GetTrainStatus is the {five|TrainLine} on time
+GetTrainStatus what's the train status of the {five|TrainLine} train
+GetTrainStatus what's the train status of the {five|TrainLine} line
+GetTrainStatus what's the train status of the {five|TrainLine} 
+GetTrainStatus what's the status of the {five|TrainLine}
+GetTrainStatus the {five|TrainLine} train line
+GetTrainStatus the {five|TrainLine} train
+GetTrainStatus the {five|TrainLine}
+GetTrainStatus {five|TrainLine} train
+GetTrainStatus the {five|TrainLine} status
+GetTrainStatus the {five|TrainLine} train status
+GetTrainStatus the delays on the {five|TrainLine} train
+GetTrainStatus the delays on the {five|TrainLine}
+GetTrainStatus  the {five|TrainLine} train status is
+GetTrainStatus  the {five|TrainLine} line status is
+GetTrainStatus  the {five|TrainLine} train line status is
+GetTrainStatus  the {five|TrainLine} status is
+GetTrainStatus what is the {five|TrainLine} train status
+GetTrainStatus what is the {five|TrainLine} line status
+GetTrainStatus what is the {five|TrainLine} train line status
+GetTrainStatus what is the {five|TrainLine} status
+GetTrainStatus give me the {five|TrainLine} train status
+GetTrainStatus give me the {five|TrainLine} status
+GetTrainStatus give me the {five|TrainLine} train line status
+GetTrainStatus give me the {five|TrainLine} line status
+GetTrainStatus get me the {five|TrainLine} train status
+GetTrainStatus get me the {five|TrainLine} status
+GetTrainStatus get me the {five|TrainLine} train line status
+GetTrainStatus get me the {five|TrainLine} line status
+GetTrainStatus find me the {five|TrainLine} train status
+GetTrainStatus find me the {five|TrainLine} status
+GetTrainStatus find me the {five|TrainLine} train line status
+GetTrainStatus find me the {five|TrainLine} line status
+GetTrainStatus tell me the {five|TrainLine} train status
+GetTrainStatus tell me the {five|TrainLine} status
+GetTrainStatus tell  me the {five|TrainLine} train line status
+GetTrainStatus tell me the {five|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {six|TrainLine} train
+GetTrainStatus what is the train status of the {six|TrainLine} line
+GetTrainStatus what is the train status of the {six|TrainLine} 
+GetTrainStatus what is the status of the {six|TrainLine} train
+GetTrainStatus what is the status of the {six|TrainLine} line
+GetTrainStatus what is the status of the {six|TrainLine}
+GetTrainStatus what is the train status for the {six|TrainLine} train
+GetTrainStatus what is the train status for the {six|TrainLine} line
+GetTrainStatus what is the train status for the {six|TrainLine} 
+GetTrainStatus what is the status for the {six|TrainLine}
+GetTrainStatus are there any delays on the {six|TrainLine} train
+GetTrainStatus are there any delays on the {six|TrainLine}
+GetTrainStatus is the {six|TrainLine} train on schedule
+GetTrainStatus is the {six|TrainLine} on schedule
+GetTrainStatus is the {six|TrainLine} train ontime
+GetTrainStatus is the {six|TrainLine} ontime
+GetTrainStatus is the {six|TrainLine} train on time
+GetTrainStatus is the {six|TrainLine} on time
+GetTrainStatus what's the train status of the {six|TrainLine} train
+GetTrainStatus what's the train status of the {six|TrainLine} line
+GetTrainStatus what's the train status of the {six|TrainLine} 
+GetTrainStatus what's the status of the {six|TrainLine}
+GetTrainStatus the {six|TrainLine} train line
+GetTrainStatus the {six|TrainLine} train
+GetTrainStatus the {six|TrainLine}
+GetTrainStatus {six|TrainLine} train
+GetTrainStatus the {six|TrainLine} status
+GetTrainStatus the {six|TrainLine} train status
+GetTrainStatus the delays on the {six|TrainLine} train
+GetTrainStatus the delays on the {six|TrainLine}
+GetTrainStatus  the {six|TrainLine} train status is
+GetTrainStatus  the {six|TrainLine} line status is
+GetTrainStatus  the {six|TrainLine} train line status is
+GetTrainStatus  the {six|TrainLine} status is
+GetTrainStatus what is the {six|TrainLine} train status
+GetTrainStatus what is the {six|TrainLine} line status
+GetTrainStatus what is the {six|TrainLine} train line status
+GetTrainStatus what is the {six|TrainLine} status
+GetTrainStatus give me the {six|TrainLine} train status
+GetTrainStatus give me the {six|TrainLine} status
+GetTrainStatus give me the {six|TrainLine} train line status
+GetTrainStatus give me the {six|TrainLine} line status
+GetTrainStatus get me the {six|TrainLine} train status
+GetTrainStatus get me the {six|TrainLine} status
+GetTrainStatus get me the {six|TrainLine} train line status
+GetTrainStatus get me the {six|TrainLine} line status
+GetTrainStatus find me the {six|TrainLine} train status
+GetTrainStatus find me the {six|TrainLine} status
+GetTrainStatus find me the {six|TrainLine} train line status
+GetTrainStatus find me the {six|TrainLine} line status
+GetTrainStatus tell me the {six|TrainLine} train status
+GetTrainStatus tell me the {six|TrainLine} status
+GetTrainStatus tell  me the {six|TrainLine} train line status
+GetTrainStatus tell me the {six|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {one|TrainLine} train
+GetTrainStatus what is the train status of the {one|TrainLine} line
+GetTrainStatus what is the train status of the {one|TrainLine} 
+GetTrainStatus what is the status of the {one|TrainLine} train
+GetTrainStatus what is the status of the {one|TrainLine} line
+GetTrainStatus what is the status of the {one|TrainLine}
+GetTrainStatus what is the train status for the {one|TrainLine} train
+GetTrainStatus what is the train status for the {one|TrainLine} line
+GetTrainStatus what is the train status for the {one|TrainLine} 
+GetTrainStatus what is the status for the {one|TrainLine}
+GetTrainStatus are there any delays on the {one|TrainLine} train
+GetTrainStatus are there any delays on the {one|TrainLine}
+GetTrainStatus is the {one|TrainLine} train on schedule
+GetTrainStatus is the {one|TrainLine} on schedule
+GetTrainStatus is the {one|TrainLine} train ontime
+GetTrainStatus is the {one|TrainLine} ontime
+GetTrainStatus is the {one|TrainLine} train on time
+GetTrainStatus is the {one|TrainLine} on time
+GetTrainStatus what's the train status of the {one|TrainLine} train
+GetTrainStatus what's the train status of the {one|TrainLine} line
+GetTrainStatus what's the train status of the {one|TrainLine} 
+GetTrainStatus what's the status of the {one|TrainLine}
+GetTrainStatus the {one|TrainLine} train line
+GetTrainStatus the {one|TrainLine} train
+GetTrainStatus the {one|TrainLine}
+GetTrainStatus {one|TrainLine} train
+GetTrainStatus the {one|TrainLine} status
+GetTrainStatus the {one|TrainLine} train status
+GetTrainStatus the delays on the {one|TrainLine} train
+GetTrainStatus the delays on the {one|TrainLine}
+GetTrainStatus  the {one|TrainLine} train status is
+GetTrainStatus  the {one|TrainLine} line status is
+GetTrainStatus  the {one|TrainLine} train line status is
+GetTrainStatus  the {one|TrainLine} status is
+GetTrainStatus what is the {one|TrainLine} train status
+GetTrainStatus what is the {one|TrainLine} line status
+GetTrainStatus what is the {one|TrainLine} train line status
+GetTrainStatus what is the {one|TrainLine} status
+GetTrainStatus give me the {one|TrainLine} train status
+GetTrainStatus give me the {one|TrainLine} status
+GetTrainStatus give me the {one|TrainLine} train line status
+GetTrainStatus give me the {one|TrainLine} line status
+GetTrainStatus get me the {one|TrainLine} train status
+GetTrainStatus get me the {one|TrainLine} status
+GetTrainStatus get me the {one|TrainLine} train line status
+GetTrainStatus get me the {one|TrainLine} line status
+GetTrainStatus find me the {one|TrainLine} train status
+GetTrainStatus find me the {one|TrainLine} status
+GetTrainStatus find me the {one|TrainLine} train line status
+GetTrainStatus find me the {one|TrainLine} line status
+GetTrainStatus tell me the {one|TrainLine} train status
+GetTrainStatus tell me the {one|TrainLine} status
+GetTrainStatus tell  me the {one|TrainLine} train line status
+GetTrainStatus tell me the {one|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {two|TrainLine} train
+GetTrainStatus what is the train status of the {two|TrainLine} line
+GetTrainStatus what is the train status of the {two|TrainLine} 
+GetTrainStatus what is the status of the {two|TrainLine} train
+GetTrainStatus what is the status of the {two|TrainLine} line
+GetTrainStatus what is the status of the {two|TrainLine}
+GetTrainStatus what is the train status for the {two|TrainLine} train
+GetTrainStatus what is the train status for the {two|TrainLine} line
+GetTrainStatus what is the train status for the {two|TrainLine} 
+GetTrainStatus what is the status for the {two|TrainLine}
+GetTrainStatus are there any delays on the {two|TrainLine} train
+GetTrainStatus are there any delays on the {two|TrainLine}
+GetTrainStatus is the {two|TrainLine} train on schedule
+GetTrainStatus is the {two|TrainLine} on schedule
+GetTrainStatus is the {two|TrainLine} train ontime
+GetTrainStatus is the {two|TrainLine} ontime
+GetTrainStatus is the {two|TrainLine} train on time
+GetTrainStatus is the {two|TrainLine} on time
+GetTrainStatus what's the train status of the {two|TrainLine} train
+GetTrainStatus what's the train status of the {two|TrainLine} line
+GetTrainStatus what's the train status of the {two|TrainLine} 
+GetTrainStatus what's the status of the {two|TrainLine}
+GetTrainStatus the {two|TrainLine} train line
+GetTrainStatus the {two|TrainLine} train
+GetTrainStatus the {two|TrainLine}
+GetTrainStatus {two|TrainLine} train
+GetTrainStatus the {two|TrainLine} status
+GetTrainStatus the {two|TrainLine} train status
+GetTrainStatus the delays on the {two|TrainLine} train
+GetTrainStatus the delays on the {two|TrainLine}
+GetTrainStatus  the {two|TrainLine} train status is
+GetTrainStatus  the {two|TrainLine} line status is
+GetTrainStatus  the {two|TrainLine} train line status is
+GetTrainStatus  the {two|TrainLine} status is
+GetTrainStatus what is the {two|TrainLine} train status
+GetTrainStatus what is the {two|TrainLine} line status
+GetTrainStatus what is the {two|TrainLine} train line status
+GetTrainStatus what is the {two|TrainLine} status
+GetTrainStatus give me the {two|TrainLine} train status
+GetTrainStatus give me the {two|TrainLine} status
+GetTrainStatus give me the {two|TrainLine} train line status
+GetTrainStatus give me the {two|TrainLine} line status
+GetTrainStatus get me the {two|TrainLine} train status
+GetTrainStatus get me the {two|TrainLine} status
+GetTrainStatus get me the {two|TrainLine} train line status
+GetTrainStatus get me the {two|TrainLine} line status
+GetTrainStatus find me the {two|TrainLine} train status
+GetTrainStatus find me the {two|TrainLine} status
+GetTrainStatus find me the {two|TrainLine} train line status
+GetTrainStatus find me the {two|TrainLine} line status
+GetTrainStatus tell me the {two|TrainLine} train status
+GetTrainStatus tell me the {two|TrainLine} status
+GetTrainStatus tell  me the {two|TrainLine} train line status
+GetTrainStatus tell me the {two|TrainLine} line status
+
+
+
+GetTrainStatus what is the train status of the {three|TrainLine} train
+GetTrainStatus what is the train status of the {three|TrainLine} line
+GetTrainStatus what is the train status of the {three|TrainLine} 
+GetTrainStatus what is the status of the {three|TrainLine} train
+GetTrainStatus what is the status of the {three|TrainLine} line
+GetTrainStatus what is the status of the {three|TrainLine}
+GetTrainStatus what is the train status for the {three|TrainLine} train
+GetTrainStatus what is the train status for the {three|TrainLine} line
+GetTrainStatus what is the train status for the {three|TrainLine} 
+GetTrainStatus what is the status for the {three|TrainLine}
+GetTrainStatus are there any delays on the {three|TrainLine} train
+GetTrainStatus are there any delays on the {three|TrainLine}
+GetTrainStatus is the {three|TrainLine} train on schedule
+GetTrainStatus is the {three|TrainLine} on schedule
+GetTrainStatus is the {three|TrainLine} train ontime
+GetTrainStatus is the {three|TrainLine} ontime
+GetTrainStatus is the {three|TrainLine} train on time
+GetTrainStatus is the {three|TrainLine} on time
+GetTrainStatus what's the train status of the {three|TrainLine} train
+GetTrainStatus what's the train status of the {three|TrainLine} line
+GetTrainStatus what's the train status of the {three|TrainLine} 
+GetTrainStatus what's the status of the {three|TrainLine}
+GetTrainStatus the {three|TrainLine} train line
+GetTrainStatus the {three|TrainLine} train
+GetTrainStatus the {three|TrainLine}
+GetTrainStatus {three|TrainLine} train
+GetTrainStatus the {three|TrainLine} status
+GetTrainStatus the {three|TrainLine} train status
+GetTrainStatus the delays on the {three|TrainLine} train
+GetTrainStatus the delays on the {three|TrainLine}
+GetTrainStatus  the {three|TrainLine} train status is
+GetTrainStatus  the {three|TrainLine} line status is
+GetTrainStatus  the {three|TrainLine} train line status is
+GetTrainStatus  the {three|TrainLine} status is
+GetTrainStatus what is the {three|TrainLine} train status
+GetTrainStatus what is the {three|TrainLine} line status
+GetTrainStatus what is the {three|TrainLine} train line status
+GetTrainStatus what is the {three|TrainLine} status
+GetTrainStatus give me the {three|TrainLine} train status
+GetTrainStatus give me the {three|TrainLine} status
+GetTrainStatus give me the {three|TrainLine} train line status
+GetTrainStatus give me the {three|TrainLine} line status
+GetTrainStatus get me the {three|TrainLine} train status
+GetTrainStatus get me the {three|TrainLine} status
+GetTrainStatus get me the {three|TrainLine} train line status
+GetTrainStatus get me the {three|TrainLine} line status
+GetTrainStatus find me the {three|TrainLine} train status
+GetTrainStatus find me the {three|TrainLine} status
+GetTrainStatus find me the {three|TrainLine} train line status
+GetTrainStatus find me the {three|TrainLine} line status
+GetTrainStatus tell me the {three|TrainLine} train status
+GetTrainStatus tell me the {three|TrainLine} status
+GetTrainStatus tell  me the {three|TrainLine} train line status
+GetTrainStatus tell me the {three|TrainLine} line status

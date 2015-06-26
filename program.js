@@ -163,13 +163,13 @@ function getTrainStatusEx(intent, session, callback, actualstatus, translatedTra
     var speechOutput = "";
 
 
-    if(trainline != '') {
+    if(translatedTrainLine != null && translatedTrainLine != '' && translatedTrainLine != undefined && translatedTrainLine != 'undefined') {
         //translate trainline
         speechOutput = "The Status of the " + translatedTrainLine + " train line is " + actualstatus;//Good Service"  + getServiceStatus();
         shouldEndSession = true;
     }
     else {
-        speechOutput = "I'm not sure what train line that is. Try saying, What is the status of the one train or the D. train?";
+        speechOutput = "I'm not sure what train line that is. Try saying, What is the status of the one train or the d. train?";
         shouldEndSession = false;
     }
 
