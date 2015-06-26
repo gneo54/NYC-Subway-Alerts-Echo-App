@@ -1,6 +1,8 @@
-# MTA-Alerts-Echo-App
-Provide MTA Service Alerts to be used by Amazon Echo
+# NYC-Subway-Alerts-Echo-App
+Provide NYC Subway Service Alerts to be used by Amazon Echo
 
-Uses Request https://github.com/request/request and Cheerio https://github.com/cheeriojs/cheerio
+Uses:
+Request https://github.com/request/request 
+Cheerio https://github.com/cheeriojs/cheerio
 
-This is code for an AWS Lambda function
+This is code is node.js and is for an AWS Lambda function
