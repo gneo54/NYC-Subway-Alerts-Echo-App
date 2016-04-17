@@ -5,4 +5,4 @@ Uses:
 Request https://github.com/request/request 
 Cheerio https://github.com/cheeriojs/cheerio
 
-This is code is in node.js and is for an AWS Lambda function
+This code is in node.js and is for an AWS Lambda function
